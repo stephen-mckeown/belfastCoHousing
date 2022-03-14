@@ -7,6 +7,8 @@ import {
     navLinkItem,
     navLinkText
   } from './layout.module.css'
+  import  NavBar from './navbar'
+
 
 
 const Layout = ({ pageTitle, children }) => {
@@ -14,7 +16,10 @@ const Layout = ({ pageTitle, children }) => {
       <div className={container}>
       <title>{pageTitle}</title>
       <h1>Belfast CoHousing</h1>
-      <nav>
+   
+      <NavBar />
+     
+      {/* <nav>
         <ul className={navLinks}>
           <li className={navLinkItem}>
             <Link to="/" className={navLinkText}>
@@ -27,7 +32,7 @@ const Layout = ({ pageTitle, children }) => {
             </Link>
           </li>
         </ul>
-      </nav>
+      </nav> */}
       <main>
         <h1 className={heading}>{pageTitle}</h1>
         {children}
