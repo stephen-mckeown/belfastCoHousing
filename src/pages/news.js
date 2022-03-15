@@ -2,13 +2,13 @@ import * as React from 'react'
 import { Link } from 'gatsby'
 import Layout from '../components/layout'
 
-const AboutPage = () => {
+const NewsPage = () => {
   return (
-    <Layout pageTitle="About">
-        <p>About CoHousing...</p>
+    <Layout pageTitle="News">
+        <p>Co-Housing latest news...</p>
     
     </Layout>
   )
 }
 
-export default AboutPage
+export default NewsPage
