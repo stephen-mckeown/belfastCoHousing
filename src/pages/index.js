@@ -12,7 +12,7 @@ const IndexPage = () => {
       <StaticImage
         alt="Belfast Brick Build Blue"
         src="../images/belfastBlue.png"
-      />
+      />  
     </Layout>
   )
 }

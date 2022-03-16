@@ -6,9 +6,12 @@ const AboutPage = () => {
   return (
     <Layout pageTitle="About">
         <p>About CoHousing...</p>
-    
+   
+     
     </Layout>
   )
 }
 
 export default AboutPage
+
+//src/images/housingImage.png
