@@ -8,16 +8,10 @@ import {
 
 
 
-
 const Layout = ({ pageTitle, children }) => {
   return (
       <div className={container}>
-      {/* <title>{pageTitle}</title> */}
-    
-
       <Navigation />
-     
-
       <main>
         <h1 className={heading}>{pageTitle}</h1>
         {children}

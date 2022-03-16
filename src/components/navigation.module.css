@@ -5,6 +5,7 @@
     align-items: center;
     margin: 0 auto; 
     padding: var(--space-2xl) var(--size-gutter);
+    font-family: "Space Grotesk", sans-serif;
   }
   
   .navigation {
@@ -20,6 +21,8 @@
     align-items: center;
     width: 100%;
     margin-left: 30px;
+    color: #a2533e;
+    font-weight: 800;
   }
   
   .navigationItem a {
