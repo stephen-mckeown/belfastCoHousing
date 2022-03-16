@@ -1,7 +1,9 @@
 
 .container {
   margin: auto;
-  max-width: 900px;
+  margin-right: 80px;
+  margin-left: 80px;
+  /* max-width: 900px; */
   font-family: sans-serif;
 }
 

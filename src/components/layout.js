@@ -12,6 +12,7 @@ import {
 const Layout = ({ pageTitle, children }) => {
   return (
       <div className={container}>
+        
       <Navigation />
       <main>
         <h1 className={heading}>{pageTitle}</h1>

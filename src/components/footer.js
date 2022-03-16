@@ -1,16 +1,16 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
+import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
-import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
+import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
 
 function Copyright() {
   return (
-    <Typography variant="body2" color="text.secondary" align="center">
+    <Typography variant="body2" color="text.secondary">
       {'Copyright © '}
       <Link color="inherit" href="https://mui.com/">
-        Your Website
+        Belfast CoHousing
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -18,32 +18,35 @@ function Copyright() {
   );
 }
 
-function Footer(props) {
-  const { description, title } = props;
-
+export default function StickyFooter() {
   return (
-    <Box component="footer" sx={{ bgcolor: 'background.paper', py: 6 }}>
-      <Container maxWidth="lg">
-        <Typography variant="h6" align="center" gutterBottom>
-          {title}
-        </Typography>
-        <Typography
-          variant="subtitle1"
-          align="center"
-          color="text.secondary"
-          component="p"
-        >
-          {description}
-        </Typography>
-        <Copyright />
-      </Container>
+    <Box
+      sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        minHeight: '100vh',
+      }}
+    >
+      <Box
+        component="footer"
+        sx={{
+          py: 3,
+          px: 2,
+          mt: 'auto',
+          backgroundColor: (theme) =>
+            theme.palette.mode === 'light'
+              ? theme.palette.grey[200]
+              : theme.palette.grey[800],
+        }}
+      >
+        <Container maxWidth="xl">
+            
+          <Typography variant="body1">
+            Contact Information here...
+          </Typography>
+          <Copyright />
+        </Container>
+      </Box>
     </Box>
   );
 }
-
-Footer.propTypes = {
-  description: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-};
-
-export default Footer;
