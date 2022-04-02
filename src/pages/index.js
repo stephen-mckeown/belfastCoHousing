@@ -3,10 +3,13 @@ import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import { StaticImage } from 'gatsby-plugin-image'
 import "@fontsource/space-grotesk"
-
+import  Navigation  from '../components/navigation'
+import  Footer  from '../components/footer'
 
 const IndexPage = () => {
-  return (
+  return (    
+  <React.Fragment>
+
     <Layout pageTitle="Home">
       <p>We are Cohousing Belfast.</p>
       <p>We believe in a future where housing is green and affordable.</p>
@@ -15,6 +18,8 @@ const IndexPage = () => {
         src="../images/belfastBlue.png"
       />  
     </Layout>
+
+        </React.Fragment>
   )
 }
 
