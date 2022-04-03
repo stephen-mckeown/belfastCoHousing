@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import Link from '@mui/material/Link';
 import logo from '../images/coHousingImage.svg'
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
@@ -14,33 +14,33 @@ const Navigation = () => (
     elevation={0}
     sx={{ borderBottom: (theme) => `1px solid ${theme.palette.divbider}` }}
     >
-      <Toolbar 
-      // sx={{ flexWrap: 'wrap' }}
-      >
-  <nav role="navigation" className={styles.container} aria-label="Main">
-    <Link to="/" className={styles.logoLink}>
-      <img src={logo} alt="???" height={100} />
-    </Link>
-    <ul className={styles.navigation}>
-      <li className={styles.navigationItem}>
-        <Link to="/about" activeClassName="active">
+    <Toolbar component="nav">
+        <Link  href="/"   sx={{ flexGrow: 1 }}>
+          <img src={logo} alt="???" height={100}/>
+        </Link>
+        <Link
+          variant="button"
+          color="text.primary"
+          href="/about"
+          sx={{ my: 1, mx: 1.5 }}>
           About
         </Link>
-      </li>
-      <li className={styles.navigationItem}>
+
         <Link 
-        to="/news" 
-        activeClassName="active">
+          variant="button"
+          color="text.primary"
+          href="/news"
+          sx={{ my: 1, mx: 1.5 }}>
           News
         </Link>
-      </li>
-      <li className={styles.navigationItem}>
-        <Link to="/temp" activeClassName="active">
+
+        <Link
+          variant="button"
+          color="text.primary"
+          href="/temp"
+          sx={{ my: 1, mx: 1.5 }}>
           Stuff
         </Link>
-      </li>
-    </ul>
-  </nav>
   </Toolbar>
 </AppBar>
 )
@@ -48,44 +48,29 @@ const Navigation = () => (
 export default Navigation
 
 
-{/* <AppBar
-position="static"
-color="default"
-elevation={0}
-sx={{ borderBottom: (theme) => `1px solid ${theme.palette.divider}` }}
->
-<Toolbar sx={{ flexWrap: 'wrap' }}>
-  <Typography variant="h6" color="inherit" noWrap sx={{ flexGrow: 1 }}>
-    Company name
-  </Typography>
-  <nav>
-    <Link
-      variant="button"
-      color="text.primary"
-      href="#"
-      sx={{ my: 1, mx: 1.5 }}
-    >
-      Features
-    </Link>
-    <Link
-      variant="button"
-      color="text.primary"
-      href="#"
-      sx={{ my: 1, mx: 1.5 }}
-    >
-      Enterprise
-    </Link>
-    <Link
-      variant="button"
-      color="text.primary"
-      href="#"
-      sx={{ my: 1, mx: 1.5 }}
-    >
-      Support
-    </Link>
-  </nav>
-  <Button href="#" variant="outlined" sx={{ my: 1, mx: 1.5 }}>
-    Login
-  </Button>
-</Toolbar>
-</AppBar> */}
+// variant="button"
+// color="text.primary"
+// href="#"
+// sx={{ my: 1, mx: 1.5 }}
+
+
+
+{/* <ul className={styles.navigation}>
+<li className={styles.navigationItem}>
+  <Link to="/about" activeClassName="active">
+    About
+  </Link>
+</li>
+<li className={styles.navigationItem}>
+  <Link 
+  to="/news" 
+  activeClassName="active">
+    News
+  </Link>
+</li>
+<li className={styles.navigationItem}>
+  <Link to="/temp" activeClassName="active">
+    Stuff
+  </Link>
+</li>
+</ul> */}

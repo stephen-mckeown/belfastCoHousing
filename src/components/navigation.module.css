@@ -1,6 +1,6 @@
 .container {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     max-width: 1120px;
     align-items: center;
     font-family: "Space Grotesk", sans-serif;
@@ -9,6 +9,7 @@
   .navigation {
     display: flex;
     list-style: none;
+    align-items: flex-end;
   }
   
   .navigationItem {
