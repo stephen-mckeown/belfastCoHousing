@@ -12,9 +12,9 @@ import {
 const Layout = ({ pageTitle, children }) => {
   return (
       <div>
-           <Navigation />
+        <Navigation />
       <main>
-        <h1 className={heading}>{pageTitle}</h1>
+        {/* <h1 className={heading}>{pageTitle}</h1> */}
         {children}
       </main>
       <Footer />

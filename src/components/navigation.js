@@ -3,74 +3,47 @@ import Link from '@mui/material/Link';
 import logo from '../images/coHousingImage.svg'
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import * as styles from './navigation.module.css'
 
-const Navigation = () => (
-  
-  <AppBar
+import * as styles from './navigation.module.css'
+import Container from '@mui/material/Container';
+
+const Navigation = () => {
+   return (
+   <AppBar
     position="static"
     color="inherit"
     elevation={0}
-    sx={{ borderBottom: (theme) => `1px solid ${theme.palette.divbider}` }}
+    sx={{ borderBottom: (theme) => `1px solid ${theme.palette.divider}` }}
     >
-    <Toolbar component="nav">
-        <Link  href="/"   sx={{ flexGrow: 1 }}>
-          <img src={logo} alt="???" height={100}/>
-        </Link>
-        <Link
-          variant="button"
-          color="text.primary"
-          href="/about"
-          sx={{ my: 1, mx: 1.5 }}>
-          About
-        </Link>
-
-        <Link 
-          variant="button"
-          color="text.primary"
-          href="/news"
-          sx={{ my: 1, mx: 1.5 }}>
-          News
-        </Link>
-
-        <Link
-          variant="button"
-          color="text.primary"
-          href="/temp"
-          sx={{ my: 1, mx: 1.5 }}>
-          Stuff
-        </Link>
-  </Toolbar>
+    <Container maxWidth="lg">
+      <Toolbar component="nav" >
+          <Link  href="/"   sx={{ flexGrow: 1 }}>
+            <img src={logo} alt="???" height={100}/>
+          </Link>
+          <Link className={styles.navigationItem}
+            color="#a2533e"
+            href="/about"
+            fontSize={20}
+            sx={{ my: 1, mx: 1.5 }}>
+            About
+          </Link>
+          <Link className={styles.navigationItem}
+              color="#a2533e"
+            href="/news"
+            fontSize={20}
+            sx={{ my: 1, mx: 1.5 }}>
+            News
+          </Link>
+          <Link className={styles.navigationItem}
+            color="#a2533e"
+            href="/temp"
+            fontSize={20}
+            sx={{ my: 1, mx: 1.5 }}>
+            Stuff
+          </Link>
+    </Toolbar>
+  </Container>
 </AppBar>
-)
+   )}
 
 export default Navigation
-
-
-// variant="button"
-// color="text.primary"
-// href="#"
-// sx={{ my: 1, mx: 1.5 }}
-
-
-
-{/* <ul className={styles.navigation}>
-<li className={styles.navigationItem}>
-  <Link to="/about" activeClassName="active">
-    About
-  </Link>
-</li>
-<li className={styles.navigationItem}>
-  <Link 
-  to="/news" 
-  activeClassName="active">
-    News
-  </Link>
-</li>
-<li className={styles.navigationItem}>
-  <Link to="/temp" activeClassName="active">
-    Stuff
-  </Link>
-</li>
-</ul> */}
