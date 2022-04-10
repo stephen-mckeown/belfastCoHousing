@@ -1,6 +1,6 @@
 ---
 slug: "/news/my-first-post"
-title: News 02
+title: A news article about the joys of co-housing
 date: "2015-05-06"
 ---
 

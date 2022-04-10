@@ -1,6 +1,6 @@
 ---
 slug: "/news/my-first-post"
-title: News 03
+title: Looking the cat out of the tree....
 date: "2015-05-06"
 ---
 

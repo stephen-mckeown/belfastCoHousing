@@ -1,6 +1,11 @@
 import * as React from 'react'
-import { Link, graphql} from 'gatsby'
+import {  graphql} from 'gatsby'
 import Layout from '../components/layout'
+import Container from '@mui/material/Container';
+import Link from '@mui/material/Link';
+import Typography from '@mui/material/Typography';
+
+
 
 const NewsPage = ({ data, location }) => {
   // const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -8,13 +13,12 @@ const NewsPage = ({ data, location }) => {
 console.log(data.allMarkdownRemark.nodes)
   return (
     <Layout pageTitle="News">
-        <ol style={{ listStyle: `none` }}>
+      <Container disableGutters maxWidth="md" component="main" sx={{ pt: 8, pb: 6 }}>
+        <ol style={{ listStyle: `none`, paddingInlineStart: 0 }}>
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
-
           return (
             <li key={post.fields.slug}>
-             {/* <li> */}
               <article
                 className="post-list-item"
                 itemScope
@@ -22,26 +26,43 @@ console.log(data.allMarkdownRemark.nodes)
               >
                 <header>
                   <h2>
-                  <Link to={post.fields.slug} itemProp="url">
-                    {/* <Link to="/" itemProp="url"> */}
+                  <Link 
+                    href={post.fields.slug}
+                    itemProp="url"
+                    fontFamily="Space Grotesk"
+                    color="#0d1d48"
+                    underline="hover">
                       <span itemProp="headline">{title}</span>
                     </Link>
                   </h2>
-                  <small>{post.frontmatter.date}</small>
                 </header>
-                <section>
-                  <p
+                <div style={{flexDirection:'column',   display: 'flex'}}>
+                  <Typography
+                    variant="body1"
+                    align="left"
+                    color="text.secondary"
+                    itemProp="description"
+                  >
+                    {post.frontmatter.date}
+                  </Typography>
+                  <Typography
+                    variant="body1"
+                    align="left"
+                    color="text.primary"
+                    gutterBottom
                     dangerouslySetInnerHTML={{
                       __html: post.frontmatter.description || post.excerpt,
                     }}
                     itemProp="description"
-                  />
-                </section>
+                  >
+                  </Typography>
+                </div>
               </article>
             </li>
           )
         })}
       </ol>
+      </Container>
     </Layout>
   )
 }

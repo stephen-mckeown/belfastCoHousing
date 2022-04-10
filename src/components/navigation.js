@@ -24,6 +24,7 @@ const Navigation = () => {
             color="#a2533e"
             href="/about"
             fontSize={20}
+            underline="hover"
             sx={{ my: 1, mx: 1.5 }}>
             About
           </Link>
@@ -31,6 +32,7 @@ const Navigation = () => {
               color="#a2533e"
             href="/news"
             fontSize={20}
+            underline="hover"
             sx={{ my: 1, mx: 1.5 }}>
             News
           </Link>
@@ -38,6 +40,7 @@ const Navigation = () => {
             color="#a2533e"
             href="/temp"
             fontSize={20}
+            underline="hover"
             sx={{ my: 1, mx: 1.5 }}>
             Stuff
           </Link>
