@@ -1,7 +1,7 @@
 ---
 slug: "/news/my-first-post"
 title: Looking the cat out of the tree....
-date: "2015-05-06"
+date: "2022-03-13"
 ---
 
 The standard Lorem Ipsum passage.

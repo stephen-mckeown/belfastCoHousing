@@ -1,7 +1,7 @@
 ---
 slug: "/news/my-first-post"
 title: A news article about the joys of co-housing
-date: "2015-05-06"
+date: "2021-01-22"
 ---
 
 The standard Lorem Ipsum passage.

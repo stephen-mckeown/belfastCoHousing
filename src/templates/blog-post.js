@@ -50,7 +50,6 @@ const BlogPostTemplate = ({ data, location }) => {
               dangerouslySetInnerHTML={{ __html: post.html }}
             >
             </Typography>
-          <hr />
         </article>
       </Container>
     </Layout>

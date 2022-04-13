@@ -10,7 +10,6 @@ import { StaticImage } from 'gatsby-plugin-image'
 const Intro = () => (
 <Container disableGutters maxWidth="md" component="main" sx={{ pt: 8, pb: 6 }}>
     <Typography
-      component="h2"
       variant="h3"
       align="center"
       color="text.primary"

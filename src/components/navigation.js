@@ -4,7 +4,7 @@ import logo from '../images/coHousingImage.svg'
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 
-import * as styles from './navigation.module.css'
+// import * as styles from './navigation.module.css'
 import Container from '@mui/material/Container';
 
 const Navigation = () => {
@@ -20,32 +20,33 @@ const Navigation = () => {
           <Link  href="/"   sx={{ flexGrow: 1 }}>
             <img src={logo} alt="???" height={100}/>
           </Link>
-          <Link className={styles.navigationItem}
+          <Link 
             color="#a2533e"
             href="/about"
             fontSize={20}
             underline="hover"
-            sx={{ my: 1, mx: 1.5 }}>
+            sx={{ my: 1, mx: 1.5, fontFamily: "Space Grotesk"}}>
             About
           </Link>
-          <Link className={styles.navigationItem}
+          <Link 
               color="#a2533e"
             href="/news"
             fontSize={20}
             underline="hover"
-            sx={{ my: 1, mx: 1.5 }}>
+            sx={{ my: 1, mx: 1.5, fontFamily: "Space Grotesk"}}>
             News
           </Link>
-          <Link className={styles.navigationItem}
+          <Link
             color="#a2533e"
             href="/temp"
             fontSize={20}
             underline="hover"
-            sx={{ my: 1, mx: 1.5 }}>
+            sx={{ my: 1, mx: 1.5, fontFamily: "Space Grotesk" }}>
             Stuff
           </Link>
     </Toolbar>
   </Container>
+
 </AppBar>
    )}
 

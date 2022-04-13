@@ -1,7 +1,7 @@
 ---
 slug: "/news/my-first-post"
 title: The beginning of something wonderful
-date: "2022-04-06"
+date: "2020-01-10"
 ---
 
 The standard Lorem Ipsum passage.
