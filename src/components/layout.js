@@ -1,24 +1,22 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
-import {
-    container,
-    heading
-  } from './layout.module.css'
   import  Navigation  from './navigation'
   import  Footer  from './footer'
+  import Head from "./head"
 
 
 
-const Layout = ({ pageTitle, children }) => {
+const Layout = (props) => {
   return (
-      <div>
-        <Navigation />
+    <>
+      <Head {...props} />
+      <Navigation />
       <main>
         {/* <h1 className={heading}>{pageTitle}</h1> */}
-        {children}
+        {props.children}
       </main>
       <Footer />
-    </div>
+    </>
   )
 }
 export default Layout

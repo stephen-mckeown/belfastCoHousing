@@ -36,8 +36,8 @@ export const mobileHeaderNavWrapper = styleVariants({
 })
 
 export const mobileNavSVGColorWrapper = styleVariants({
-  primary: [{ color: theme.colors.primary }],
-  reversed: [{ color: theme.colors.background }],
+  primary: [{ color: theme.colors.headers }],
+  reversed: [{ color: theme.colors.white }],
 })
 
 export const mobileNavOverlay = style({
@@ -57,9 +57,10 @@ export const mobileNavOverlay = style({
 export const mobileNavLink = style({
   display: "block",
   color: theme.colors.background,
-  fontSize: theme.fontSizes[4],
-  paddingTop: theme.space[2],
+  fontSize: theme.fontSizes[3],
+  paddingTop: theme.space[1],
   paddingBottom: theme.space[2],
   paddingLeft: theme.space[4],
   paddingRight: theme.space[4],
+  fontFamily: theme.fonts.navText
 })
