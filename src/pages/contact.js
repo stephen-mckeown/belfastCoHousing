@@ -1,18 +1,16 @@
+
 import * as React from 'react'
 import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import  Intro  from '../components/intro'
 
-const AboutPage = () => {
+const ContactPage = () => {
   return (
-    <Layout pageTitle="About">
-        <p>About CoHousing...</p>
-        <Intro/>
-     
+    <Layout pageTitle="Contact">
+        <p>Contact Info Page...</p>
     </Layout>
   )
 }
 
-export default AboutPage
+export default ContactPage
 
-//src/images/housingImage.png

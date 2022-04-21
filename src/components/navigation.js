@@ -55,7 +55,7 @@ return (
       <nav>
           <Link 
             color="#a2533e"
-            href="/about"
+            href="/cohousing"
             fontSize={20}
             underline="hover"
             sx={{ my: 1, mx: 1.5, fontFamily: "Space Grotesk"}}>
@@ -63,7 +63,7 @@ return (
           </Link>
           <Link 
               color="#a2533e"
-            href="/news"
+            href="/pilot"
             fontSize={20}
             underline="hover"
             whiteSpace={"nowrap"}
@@ -72,7 +72,7 @@ return (
           </Link>
           <Link
             color="#a2533e"
-            href="/temp"
+            href="/membership"
             fontSize={20}
             underline="hover"
             sx={{ my: 1, mx: 1.5, fontFamily: "Space Grotesk" }}>
@@ -80,7 +80,7 @@ return (
           </Link>
           <Link
             color="#a2533e"
-            href="/temp"
+            href="/resources"
             fontSize={20}
             underline="hover"
             sx={{ my: 1, mx: 1.5, fontFamily: "Space Grotesk" }}>
@@ -88,7 +88,7 @@ return (
           </Link>
           <Link
             color="#a2533e"
-            href="/temp"
+            href="/contact"
             fontSize={20}
             underline="hover"
             sx={{ my: 1, mx: 1.5, fontFamily: "Space Grotesk" }}>
@@ -96,7 +96,7 @@ return (
           </Link>
           <Link
             color="#a2533e"
-            href="/temp"
+            href="/faq"
             fontSize={20}
             underline="hover"
             sx={{ my: 1, mx: 1.5, fontFamily: "Space Grotesk" }}>
@@ -128,22 +128,22 @@ return (
                     <NavLink to="/" className={mobileNavLink}>
                     Home
                     </NavLink>
-                    <NavLink to="/" className={mobileNavLink}>
+                    <NavLink to="/cohousing" className={mobileNavLink}>
                     CoHousing
                     </NavLink>
-                    <NavLink to="/" className={mobileNavLink}>
+                    <NavLink to="/pilot" className={mobileNavLink}>
                     Pilot Project
                     </NavLink>
-                    <NavLink to="/" className={mobileNavLink}>
+                    <NavLink to="/membership" className={mobileNavLink}>
                     Membership
                     </NavLink>
-                    <NavLink to="/" className={mobileNavLink}>
+                    <NavLink to="/resources" className={mobileNavLink}>
                     Resources
                     </NavLink>
-                    <NavLink to="/" className={mobileNavLink}>
+                    <NavLink to="/contact" className={mobileNavLink}>
                     Contact
                     </NavLink>
-                    <NavLink to="/" className={mobileNavLink}>
+                    <NavLink to="/faq" className={mobileNavLink}>
                     FAQ
                     </NavLink>
             </FlexList>

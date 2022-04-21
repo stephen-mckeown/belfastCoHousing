@@ -1,5 +1,5 @@
 import * as React from 'react'
-import {  graphql} from 'gatsby'
+import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';

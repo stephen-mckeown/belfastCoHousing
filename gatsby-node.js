@@ -113,3 +113,17 @@ exports.createSchemaCustomization = ({ actions }) => {
     }
   `)
 }
+
+// interface HomepageBlock implements Node {
+//   id: ID!
+//   blocktype: String
+// }
+
+// interface AboutLeadership implements Node & HomepageBlock {
+//   id: ID!
+//   blocktype: String
+//   kicker: String
+//   heading: String
+//   subhead: String
+//   content: [AboutProfile]
+// }
