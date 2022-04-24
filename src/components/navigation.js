@@ -96,7 +96,7 @@ return (
           </Link>
           <Link
             color="#a2533e"
-            href="/faq"
+            href="/news"
             fontSize={20}
             underline="hover"
             sx={{ my: 1, mx: 1.5, fontFamily: "Space Grotesk" }}>
