@@ -15,6 +15,6 @@ module.exports = {
       },
       `gatsby-transformer-remark`,
       `gatsby-plugin-vanilla-extract`,
-      
+      `gatsby-transformer-sharp`
     ]
 }

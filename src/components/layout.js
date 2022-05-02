@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
   import  Navigation  from './navigation'
   import  Footer  from './footer'
   import Head from "./head"
+  import "../styles.css.ts"
 
 
 

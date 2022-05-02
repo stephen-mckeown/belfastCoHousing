@@ -92,6 +92,7 @@ exports.createSchemaCustomization = ({ actions }) => {
     type Author {
       name: String
       summary: String
+      image: String
     }
 
     type Social {
@@ -101,6 +102,7 @@ exports.createSchemaCustomization = ({ actions }) => {
     type MarkdownRemark implements Node {
       frontmatter: Frontmatter
       fields: Fields
+      image: String
     }
 
     type Frontmatter {
