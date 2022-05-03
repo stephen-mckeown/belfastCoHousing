@@ -50,7 +50,7 @@ const AboutLeadership = ( ) => {
       edges {
         node {
           id
-          gatsbyImageData
+          gatsbyImageData(width: 200, height: 200)
           fluid {
             originalName
           }
@@ -82,7 +82,7 @@ const AboutLeadership = ( ) => {
  const images = data.allImageSharp.edges
 
 //  console.log(props)
-console.log(images[0].node.gatsbyImageData)
+
 var asdf = props.map(x =>{ 
   var imagePic = images.filter(y => {
     return y.node.fluid.originalName == x.frontmatter.image
