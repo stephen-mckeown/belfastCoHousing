@@ -81,8 +81,6 @@ const AboutLeadership = ( ) => {
  const props = data.allMarkdownRemark.nodes
  const images = data.allImageSharp.edges
 
-//  console.log(props)
-
 var asdf = props.map(x =>{ 
   var imagePic = images.filter(y => {
     return y.node.fluid.originalName == x.frontmatter.image

@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from '@mui/material/Link';
-import logo from '../images/coHousingImage.svg'
+import logo from '../images/coHousingLogo.svg'
+import logoReverse from '../images/coHousingLogoReverse.svg'
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import { graphql, useStaticQuery } from "gatsby"
@@ -46,9 +47,9 @@ return (
   <header>
     <Container className={desktopHeaderNavWrapper}   >
       <Flex alignItems="start">
-      <Space size={5} />
+      {/* <Space size={5} /> */}
         <Link  href="/">
-            <img src={logo} alt="???" height={100}/>
+            <img src={logo} alt="???" height={80}/>
         </Link>
       </Flex>
       <Flex variant="spaceBetween" alignItems="center">
@@ -107,9 +108,9 @@ return (
       </Container>
       <Container className={mobileHeaderNavWrapper[isOpen ? "open" : "closed"]}>
         <Flex variant="spaceBetween">
-          {/* <Link  href="/"   sx={{ flexGrow: 1 }}>
-            <img src={logo} alt="???" height={100}/>
-          </Link> */}
+        <Link  href="/">
+          {isOpen ? <img src={logoReverse} alt="???" height={80}/> : <img src={logo} alt="???" height={80}/>}
+        </Link>
           <InteractiveIcon
           title="Toggle menu"
           onClick={() => setOpen(!isOpen)}
@@ -125,6 +126,7 @@ return (
         <div className={mobileNavOverlay}>
           <nav>
             <FlexList responsive variant="stretch">
+  
                     <NavLink to="/" className={mobileNavLink}>
                     Home
                     </NavLink>
