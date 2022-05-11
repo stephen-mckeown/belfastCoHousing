@@ -18,8 +18,8 @@ import {
 const PilotPage = () => {
   return (
     <Layout pageTitle="Pilot">
-              <Container  width="tight">
-        <Box center paddingY={5}>
+              <Container  width="normal">
+        <Box center paddingY={3}>
           <Heading as="h1">Pilot Project</Heading>
           <Text variant = "lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
@@ -34,6 +34,12 @@ const PilotPage = () => {
           Qui irure qui lorem cupidatat commodo. 
           Elit sunt amet fugiat veniam occaecat fugiat aliqua.sdf</Text>
       </Box>
+      <Box center paddingY={4}>
+        <StaticImage
+        alt="Morey Mews"
+        src='../images/moreyMews.jpg'
+        /> 
+       </Box>
     </Container> 
     </Layout>
   )

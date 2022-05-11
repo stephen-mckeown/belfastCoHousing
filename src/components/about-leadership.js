@@ -90,7 +90,7 @@ var asdf = props.map(x =>{
   return (
     <Section>
       <Container width="tight">
-        <Box center paddingY={4}>
+        <Box center paddingY={3}>
            <Heading as="h1">Who we are</Heading>
             <Text>Who we are sub text blab blab</Text>
         </Box>

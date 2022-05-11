@@ -3,7 +3,7 @@ import { theme } from "../theme.css"
 import { media } from "./ui.css"
 
 export const desktopHeaderNavWrapper = style({
-  maxWidth: 900,
+  maxWidth: 1200,
   position: "relative",
   zIndex: 1,
   display: "none",

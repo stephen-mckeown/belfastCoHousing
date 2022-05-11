@@ -46,13 +46,14 @@ React.useEffect(() => {
 return (
   <header>
     <Container className={desktopHeaderNavWrapper}   >
-      <Flex alignItems="start">
+      <Flex alignItems="start" marginY="0">
       {/* <Space size={5} /> */}
         <Link  href="/">
             <img src={logo} alt="???" height={80}/>
         </Link>
       </Flex>
-      <Flex variant="spaceBetween" alignItems="center">
+      <Flex variant="spaceBetween" alignItems="center" marginY="4">
+         {/* <Space size={4} /> */}
       <nav>
           <Link 
             color="#a2533e"
@@ -145,7 +146,7 @@ return (
                     <NavLink to="/contact" className={mobileNavLink}>
                     Contact
                     </NavLink>
-                    <NavLink to="/faq" className={mobileNavLink}>
+                    <NavLink to="/news" className={mobileNavLink}>
                     FAQ
                     </NavLink>
             </FlexList>

@@ -10,7 +10,7 @@ import Typography from '@mui/material/Typography';
 const NewsPage = ({ data, location }) => {
   // const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
-console.log(data)
+
   return (
     <Layout pageTitle="News">
       <Container disableGutters maxWidth="md" component="main" sx={{ pt: 8, pb: 6 }}>
