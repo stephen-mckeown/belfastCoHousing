@@ -40,7 +40,14 @@ const PilotPage = () => {
         src='../images/moreyMews.jpg'
         /> 
        </Box>
+       <Box center paddingY={4}>
+        <StaticImage
+        alt="plan view"
+        src='../images/planSection.jpeg'
+        /> 
+       </Box>
     </Container> 
+    
     </Layout>
   )
 }
