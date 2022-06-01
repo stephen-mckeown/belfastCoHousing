@@ -91,7 +91,7 @@ var asdf = props.map(x =>{
     <Section>
       <Container width="tight">
         <Box center paddingY={3}>
-           <Heading as="h1">Who we are</Heading>
+           <Heading as="h1">Whos involved</Heading>
             <Text>Who we are sub text blab blab</Text>
         </Box>
         <FlexList gutter={false} gap={0} variant="center" alignItems="start">
