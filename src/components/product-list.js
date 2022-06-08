@@ -1,5 +1,5 @@
 import * as React from "react"
-import { graphql } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import {
   Container,
   Section,
@@ -13,20 +13,42 @@ import {
   LinkList,
 } from "./ui"
 
-function Product(props) {
+function Product(prop) {
+  console.log(prop)
   return (
     <Box center>
-      {props.image && (
+      {/* {props.image && (
         <Icon alt={props.image.alt} image={props.image} size="large" />
-      )}
-      <Subhead>{props.heading}</Subhead>
-      <Text>{props.text}</Text>
-      <LinkList links={props.links} />
+      )} */}
+      <Subhead>{prop.frontmatter.title}</Subhead>
+      {prop.html && (
+          <Text variant="medium" center>
+             <div className="post-body" dangerouslySetInnerHTML={{ __html: prop.html }} />
+          </Text>
+        )}
+      {/* <Text>{props.text}</Text>
+      <LinkList links={props.links} /> */}
     </Box>
   )
 }
 
-export default function ProductList(props) {
+export default function ProductList() {
+
+    const data = useStaticQuery(graphql`
+    query {
+      allMarkdownRemark(filter: {frontmatter: {slug: {regex: "/productList/"}}}) {
+        nodes {
+          frontmatter {
+            title
+          }
+          html
+        }
+      }
+    }
+    `)
+
+    const props = data.allMarkdownRemark.nodes
+
   return (
     <Section>
       <Container>
@@ -38,8 +60,8 @@ export default function ProductList(props) {
           {props.text && <Text>{props.text}</Text>}
         </Box>
         <FlexList gap={4} variant="responsive">
-          {props.content.map((product) => (
-            <li key={product.id}>
+          {props.map((product, index) => (
+            <li key={index}>
               <Product {...product} />
             </li>
           ))}
@@ -49,26 +71,3 @@ export default function ProductList(props) {
   )
 }
 
-export const query = graphql`
-  fragment HomepageProductListContent on HomepageProductList {
-    id
-    kicker
-    heading
-    text
-    content {
-      id
-      heading
-      text
-      image {
-        alt
-        id
-        gatsbyImageData
-      }
-      links {
-        id
-        href
-        text
-      }
-    }
-  }
-`
