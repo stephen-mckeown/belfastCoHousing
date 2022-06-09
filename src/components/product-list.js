@@ -16,7 +16,7 @@ import {
 function Product(prop) {
   console.log(prop)
   return (
-    <Box center>
+    <Box width="third" padding={4} center>
       {/* {props.image && (
         <Icon alt={props.image.alt} image={props.image} size="large" />
       )} */}
@@ -51,19 +51,17 @@ export default function ProductList() {
 
   return (
     <Section>
-      <Container>
-        <Box center paddingY={4}>
+      <Container width="tight">
+        <Box center paddingY={3}>
           <Heading>
             {props.kicker && <Kicker>{props.kicker}</Kicker>}
             {props.heading}
           </Heading>
           {props.text && <Text>{props.text}</Text>}
         </Box>
-        <FlexList gap={4} variant="responsive">
+        <FlexList gutter={false} gap={0} variant="center" alignItems="start">
           {props.map((product, index) => (
-            <li key={index}>
-              <Product {...product} />
-            </li>
+              <Product {...product} key={index}/>
           ))}
         </FlexList>
       </Container>
