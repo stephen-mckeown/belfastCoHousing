@@ -491,6 +491,13 @@ export const backgrounds = styleVariants({
     color: theme.colors.primary,
     backgroundColor: theme.colors.muted,
   },
+  angled: {
+    color: "white",
+    // backgroundColor: "black",
+    background: "linear-gradient(2deg,  white 5%, #a91b60 5%,  #a91b60 95%, white 95%)",
+    
+    
+  },
 })
 
 export const blockquote = style({

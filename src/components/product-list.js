@@ -50,8 +50,8 @@ export default function ProductList() {
     const props = data.allMarkdownRemark.nodes
 
   return (
-    <Section>
-      <Container width="tight">
+    <Section background="angled">
+      <Container width="tight" >
         <Box center paddingY={3}>
           <Heading>
             {props.kicker && <Kicker>{props.kicker}</Kicker>}
