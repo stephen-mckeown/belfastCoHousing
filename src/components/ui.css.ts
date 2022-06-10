@@ -170,12 +170,23 @@ export const box = styleVariants({
 })
 
 export const section = style({
-  paddingTop: theme.space[4],
-  paddingBottom: theme.space[4],
+  paddingTop: theme.space[0],
+  paddingBottom: theme.space[0],
   "@media": {
     [media.small]: {
       paddingTop: theme.space[5],
       paddingBottom: theme.space[5],
+    },
+  },
+})
+
+export const sectionAngled = style({
+  paddingTop: theme.space[5],
+  paddingBottom: theme.space[5],
+  "@media": {
+    [media.small]: {
+      paddingTop: theme.space[4],
+      paddingBottom: theme.space[4],
     },
   },
 })
@@ -491,12 +502,17 @@ export const backgrounds = styleVariants({
     color: theme.colors.primary,
     backgroundColor: theme.colors.muted,
   },
+  redish: {
+    color: theme.colors.white,
+    backgroundColor: theme.colors.redish,
+  },
   angled: {
-    color: "white",
-    // backgroundColor: "black",
-    background: "linear-gradient(2deg,  white 5%, #a91b60 5%,  #a91b60 95%, white 95%)",
-    
-    
+    color: "black",
+    background: "linear-gradient(-3deg,  white 50%, #a91b60 50%)",
+  },
+  angledInv: {
+    color: "black",
+    background: "linear-gradient(3deg, #a91b60 50%, white 50%)",
   },
 })
 

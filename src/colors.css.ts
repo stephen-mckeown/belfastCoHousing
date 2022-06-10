@@ -6,5 +6,6 @@ export const colors = {
   active: "#004287",
   black: "#000",
   headers: "#a2533e",
-  white: "white"
+  white: "white",
+  redish: "#a91b60"
 }

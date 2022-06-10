@@ -106,6 +106,10 @@ export function Section(props) {
   return <Box as="section" className={styles.section} {...props} />
 }
 
+export function SectionAngled(props) {
+  return <Box as="section" className={styles.sectionAngled} {...props} />
+}
+
 export function Text({ variant = "body", center, bold, ...props }) {
   return (
     <Base

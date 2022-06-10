@@ -3,6 +3,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import {
   Container,
   Section,
+  SectionAngled,
   FlexList,
   Text,
   Kicker,
@@ -50,9 +51,13 @@ export default function ProductList() {
     const props = data.allMarkdownRemark.nodes
 
   return (
-    <Section background="angled">
+   <div>
+      <SectionAngled background="angledInv"/>
+    <Section background="redish">
+             {/* <Box background="angledInv" paddingTop= {3}/> */}
+      
       <Container width="tight" >
-        <Box center paddingY={3}>
+        <Box center paddingY={1}>
           <Heading>
             {props.kicker && <Kicker>{props.kicker}</Kicker>}
             {props.heading}
@@ -66,6 +71,9 @@ export default function ProductList() {
         </FlexList>
       </Container>
     </Section>
+    <SectionAngled background="angled"/>
+
+    </div>
   )
 }
 
