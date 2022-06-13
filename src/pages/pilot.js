@@ -9,6 +9,7 @@ import {
   FlexList,
   Heading,
   Section,
+  Subhead,
   Text,
   Box,
   Kicker,
@@ -18,41 +19,37 @@ import {
 const PilotPage = () => {
   return (
     <Layout pageTitle="Pilot">
-              <Container  width="normal">
+      <Container  width="normal">
+        <Box center>      <Subhead>OUR PILOT PROJECT</Subhead></Box>
+
         <Box center paddingY={3}>
-          <Heading as="h1">Pilot Project</Heading>
-          <Box center paddingY={1}>
-            <iframe width="420" height="315"
-            src="https://www.youtube.com/embed/tgbNymZ7vqY">
-            </iframe>
-          </Box>
-          <Text variant = "lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</Text>
-      </Box>
-      <StaticImage
-      alt="Belfast Brick Build Blue"
-      src='../images/yorSpaceHouse.svg'
-      /> 
-      <Box center paddingY={4}>
-        <Text variant = "lead"> Anim aute id magna aliqua ad ad non deserunt sunt. 
-          Qui irure qui lorem cupidatat commodo. 
-          Elit sunt amet fugiat veniam occaecat fugiat aliqua.sdf</Text>
-      </Box>
-      <Box center paddingY={4}>
-        <StaticImage
-        alt="Morey Mews"
-        src='../images/moreyMews.jpg'
-        /> 
-       </Box>
-       <Box center paddingY={4}>
-        <StaticImage
-        alt="plan view"
-        src='../images/planSection.jpeg'
-        /> 
-       </Box>
+          <Text variant = "lead">The Belfast Cohousing pilot project (Harbour schemeto the right) includes 20 units: 14 apartments with 1 and 2 bedrooms for a total of 855 sqm, 6 houses with 3 and 4 bedrooms and a total of 580 sqm and a 200 sqm community house . This housing scheme could house up to 65 people. This visual of the scheme shown above and the outline design is based on a template location in the Harbour area where street parking and any road infrastructure is not required. The community house is intended to be built at the same time as the homes.</Text>
+          <StaticImage
+            alt="plan b view"
+            src='../images/planTypeB.png'
+            /> 
+        </Box>
+        <Box center paddingY={5}>
+          <Text variant = "lead">Smaller energy efficient homes with the possibility of an element of self-build may make houses cheaper to build and run. Some aspects - the common house or high eco standards for example - can make the initial investment higher. It would require some kind of subsidy, or partnership with a housing association, to provide affordable housing as part of the community.</Text>
+          <StaticImage
+            width={800}
+            alt="plan b view"
+            src='../images/isoLarge.jpeg'
+            /> 
+        </Box>
+
+        <Box center paddingY={3}>
+          <Text variant = "lead">In alternative, higher density design options, the scheme requires a site with a minimum development area of 1500 sqm</Text>
+          <Text variant = "lead">This design option would be 4 storeys, comprised of 2 storey townhouses with 2 storeys of flats above. This would include the same living standards and number of units as before, including the community house, shared outside space etc, but on a smaller footprint.</Text>
+          <StaticImage
+            alt="plan b view"
+            src='../images/planTypeA.png'
+            /> 
+        </Box>
+ 
+
     </Container> 
-    
+
     </Layout>
   )
 }

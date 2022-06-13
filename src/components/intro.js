@@ -39,11 +39,11 @@ const Intro = () => (
     Cohousing communities are created and run by their residents. Each household has a self-contained home and the community shares some resources and activities. The site, social activities and governance are all designed to balance privacy with beneficial social interaction. The focus is on community, a neighbourhood where people want to band together, take care of one another and collaborate for the good of all.
       </Text>
   </Box>
-  <Box center paddingY={0}>
+  <Box center paddingY={4}>
     <StaticImage
-    width={500}
+    width={700}
     alt="housing sketch"
-    src='../images/isoBW.jpeg'
+    src='../images/cohousingCartoon.png'
     /> 
   </Box>
 </Container>
