@@ -53,9 +53,7 @@ export default function ProductList() {
   return (
    <div>
       <SectionAngled background="angledInv"/>
-    <Section background="redish">
-             {/* <Box background="angledInv" paddingTop= {3}/> */}
-      
+    <Section background="redish">      
       <Container width="tight" >
         <Box center paddingY={1}>
           <Heading>
