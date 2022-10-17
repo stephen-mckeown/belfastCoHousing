@@ -14,7 +14,7 @@ const IndexPage = () => {
     <Layout pageTitle="Home">
       <Intro/>
       <ProductList/>
-      <AboutLeadership/>
+      {/* <AboutLeadership/> */}
     </Layout>
   )
 }

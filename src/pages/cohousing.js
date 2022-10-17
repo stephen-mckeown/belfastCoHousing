@@ -20,7 +20,7 @@ import {
 
 const CoHousingPage = () => {
   return (
-    <Layout pageTitle="Cohousing">
+    <Layout pageTitle="Cohousing" style="color:#345">
       <Container  width="normal">
         <Box center paddingY={3}>
           <Subhead as="h1">WHAT IS COHOUSING?</Subhead>
