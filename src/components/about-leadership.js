@@ -1,15 +1,11 @@
-import * as React from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import { GatsbyImage, getImage, StaticImage, getSrc } from "gatsby-plugin-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import * as React from "react"
 import {
-  Container,
+  Box, Container,
   FlexList,
   Heading,
-  Section,
-  Text,
-  Box,
-  Kicker,
-  Space,
+  Section, Space, Text
 } from "./ui"
 
 function AboutProfile({prop, placeholder, index}) {
@@ -83,7 +79,7 @@ const AboutLeadership = ( ) => {
 
 var asdf = props.map(x =>{ 
   var imagePic = images.filter(y => {
-    return y.node.fluid.originalName == x.frontmatter.image
+    return y.node.fluid.originalName === x.frontmatter.image
     })
   return Object.assign({image: imagePic}, x)
 })

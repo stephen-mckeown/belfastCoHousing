@@ -1,19 +1,10 @@
-import React from 'react'
-import { GatsbyImage } from 'gatsby-plugin-image'
+import React from 'react';
 // import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
 
-import { StaticImage } from 'gatsby-plugin-image'
+import { StaticImage } from 'gatsby-plugin-image';
 import {
-  Container,
-  FlexList,
-  Heading,
-  Section,
-  Text,
-  Box,
-  Kicker,
-  Space,
-} from "./ui"
+  Box, Container, Heading, Text
+} from "./ui";
 
 // import * as styles from './hero.module.css'
 

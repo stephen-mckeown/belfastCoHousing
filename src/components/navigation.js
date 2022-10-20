@@ -1,34 +1,21 @@
-import React from 'react'
 import Link from '@mui/material/Link';
-import logo from '../images/coHousingLogo.svg'
-import logoReverse from '../images/coHousingLogoReverse.svg'
-import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
-import { graphql, useStaticQuery } from "gatsby"
+import React from 'react';
+import logo from '../images/coHousingLogo.svg';
+import logoReverse from '../images/coHousingLogoReverse.svg';
 
 // import * as styles from './navigation.module.css'
 // import Container from '@mui/material/Container';
 
-import { Menu, X } from "react-feather"
+import { Menu, X } from "react-feather";
+import {
+  desktopHeaderNavWrapper,
+  mobileHeaderNavWrapper, mobileNavLink, mobileNavOverlay, mobileNavSVGColorWrapper
+} from "./navigation.css";
 import {
   Container,
   Flex,
-  FlexList,
-  Space,
-  NavLink,
-  Button,
-  InteractiveIcon,
-  Nudge,
-  VisuallyHidden,
-} from "./ui"
-import {
-  mobileNavOverlay,
-  mobileNavLink,
-  desktopHeaderNavWrapper,
-  mobileHeaderNavWrapper,
-  mobileNavSVGColorWrapper,
-} from "./navigation.css"
-import NavItemGroup from "./nav-item-group"
+  FlexList, InteractiveIcon, NavLink
+} from "./ui";
 // import BrandLogo from "./brand-logo"
 
 
@@ -96,14 +83,14 @@ return (
             sx={{ my: 1, mx: 1.5, fontFamily: "Space Grotesk" }}>
             Contact
           </Link>
-          <Link
+          {/* <Link
             color="#a2533e"
-            href="/news"
+            href="/wip"
             fontSize={20}
             underline="hover"
             sx={{ my: 1, mx: 1.5, fontFamily: "Space Grotesk" }}>
             FAQ
-          </Link>
+          </Link> */}
           </nav>
           </Flex>
       </Container>
