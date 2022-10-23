@@ -15,6 +15,14 @@ module.exports = {
       },
       `gatsby-transformer-remark`,
       `gatsby-plugin-vanilla-extract`,
-      `gatsby-transformer-sharp`
+      `gatsby-transformer-sharp`,
+      {
+        resolve: `gatsby-plugin-s3`,
+        options: {
+          bucketName: "www.belfastcohousing.org",
+          protocol: "https",
+          hostname: "www.belfastcohousing.org",
+        },
+      },
     ]
 }
