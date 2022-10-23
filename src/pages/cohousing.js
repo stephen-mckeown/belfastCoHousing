@@ -31,7 +31,7 @@ const CoHousingPage = () => {
               <Text variant = "lead"> <a href="https://www.lilac.coop/">www.lilac.coop</a></Text>
             </div>
             <StaticImage
-                width={600}
+                width={3000}
               alt="Lilic cohousing view"
               src='../images/lilac.jpg'
               /> 
@@ -51,7 +51,7 @@ const CoHousingPage = () => {
               
               </div>
               <StaticImage
-                width={600}
+                width={2000}
                 alt="Marmalade Lane cohousing view"
                 src='../images/marmaladeLane.png'
                 /> 
@@ -71,7 +71,7 @@ const CoHousingPage = () => {
                 <Text variant = "lead"> <a href="https://www.bridportcohousing.org.uk/">www.bridportcohousing.org.uk</a></Text>
               </div>
               <StaticImage
-                width={600}
+                width={2000}
                 alt="Marmalade Lane cohousing view"
                 src='../images/bridport.png'
                 /> 
