@@ -41,7 +41,10 @@ export default function StickyFooter() {
         <Container maxWidth="xl">
             
           <Typography variant="body1">
-            Contact Information here...
+            Contact information
+          </Typography>
+          <Typography variant="body1">
+            belfastcohousing@gmail.com
           </Typography>
           <Copyright />
         </Container>
