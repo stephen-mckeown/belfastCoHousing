@@ -75,14 +75,14 @@ return (
             sx={{ my: 1, mx: 1.5, fontFamily: "Space Grotesk" }}>
             Resources
           </Link>
-          <Link
+          {/* <Link
             color="#a2533e"
             href="/contact"
             fontSize={20}
             underline="hover"
             sx={{ my: 1, mx: 1.5, fontFamily: "Space Grotesk" }}>
             Contact
-          </Link>
+          </Link> */}
           {/* <Link
             color="#a2533e"
             href="/wip"
@@ -130,12 +130,12 @@ return (
                     <NavLink to="/resources" className={mobileNavLink}>
                     Resources
                     </NavLink>
-                    <NavLink to="/contact" className={mobileNavLink}>
+                    {/* <NavLink to="/contact" className={mobileNavLink}>
                     Contact
                     </NavLink>
                     <NavLink to="/news" className={mobileNavLink}>
                     FAQ
-                    </NavLink>
+                    </NavLink> */}
             </FlexList>
           </nav>
         </div>

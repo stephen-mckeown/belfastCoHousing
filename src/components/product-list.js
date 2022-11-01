@@ -10,8 +10,6 @@ import {
   Heading,
   Subhead,
   Box,
-  Icon,
-  LinkList,
 } from "./ui"
 
 function Product(prop) {
