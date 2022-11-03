@@ -7,14 +7,14 @@ import {
   Text
 } from "../components/ui"
 
-const FaqPage = () => {
+const PathwayPage = () => {
   return (
     <Layout pageTitle="FAQ">
-        <Text variant="heading" center>FAQ Page</Text>
+        <Text variant="heading" center>Pathway Page</Text>
         <Text variant="heading" center>Coming soon...</Text>
     </Layout>
   )
 }
 
-export default FaqPage
+export default PathwayPage
 

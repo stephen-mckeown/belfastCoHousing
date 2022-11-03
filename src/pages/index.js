@@ -11,11 +11,8 @@ import { Box, Heading } from '../components/ui'
 const IndexPage = () => {
   return (    
     <Layout pageTitle="Home">
-    {/* <Box center paddingY={3}>
-        <Heading as="h1">Comming soon...</Heading>
-    </Box> */}
-      {/* <Intro/>
-      <ProductList/> */}
+      <Intro/>
+      <ProductList/>
       {/* <AboutLeadership/> */}
     </Layout>
   )

@@ -1,20 +1,15 @@
-
 import * as React from 'react'
 // import { Link } from 'gatsby'
 import Layout from '../components/layout'
 // import  Intro  from '../components/intro'
-import {
-  Text
-} from "../components/ui"
+import BasicTimeline from '../components/timelineComp'
 
-const FaqPage = () => {
+const TimelinePage = () => {
   return (
     <Layout pageTitle="FAQ">
-        <Text variant="heading" center>FAQ Page</Text>
-        <Text variant="heading" center>Coming soon...</Text>
+        <BasicTimeline/>
     </Layout>
   )
 }
 
-export default FaqPage
-
+export default TimelinePage
